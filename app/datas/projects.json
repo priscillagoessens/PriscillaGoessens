@@ -1,0 +1,20 @@
+[
+    {
+      "id": "1",
+      "title": "Booki",
+      "content": "Site web d'agence de location d'appartement entre particuliers",
+      "cover": "/assets/img/booki.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Riding cities",
+      "content": "Site pour association d'activité a roulette",
+      "cover": "/assets/img/riding-cities.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Oh my food",
+      "content": "Site pour les restaurateurs",
+      "cover": "/assets/img/food.jpg"
+    }
+  ]

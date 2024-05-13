@@ -1,0 +1,27 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    background: #F6F6F6;
+    gap: 18px;
+    padding: 50px 180px 50px 180px;
+    &-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        row-gap: 50px;
+        &-description{
+            color: black;
+            font-family: raleway;
+        }
+        &-image{
+            display: flex;
+            align-items: center;
+            justify-content: center;        
+            &_size{
+                height: 300px;
+                object-fit: cover;
+                border-radius: 166px;
+            }
+        }
+    }
+}

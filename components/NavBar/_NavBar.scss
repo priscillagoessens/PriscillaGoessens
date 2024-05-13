@@ -1,0 +1,26 @@
+.navigation-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    &-wrapper{
+        display: flex;
+        flex-direction: row;
+        &_link{
+            display: flex;
+            a{
+                text-decoration: none;
+                color: #faf4f4;
+                padding: 10px;
+                font-family: Raleway-semibold;
+            }
+        }
+    }
+    &-logo{
+        height: 200px;
+        width: auto;
+    }
+}

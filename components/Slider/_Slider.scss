@@ -1,0 +1,19 @@
+.slider-section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    &-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        &-slide{
+            &-title{
+                color: white;
+                font-family: raleway-semi-bold;
+            }
+
+        }
+    }
+}
