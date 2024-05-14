@@ -1,19 +1,34 @@
 .slider-section {
     margin: 0 auto;
-    width: 100%;
     max-width: 1200px;
+    display: block;
+    padding: 100px 0;
+    background: #224466;
+    h2 {
+        margin: 1rem;
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        font-family: raleway-bold;
+        left: 44%;
+        position: relative;
+    }
     &-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
+        display: block;
         &-slide{
+            background: #f8fafc;
+            border-radius: 15px;
+            position: relative;
+            left: 20%;
+            width: 60%;
+            &-img{
+                width: auto;
+                height: 80px;
+            }
             &-title{
                 color: white;
                 font-family: raleway-semi-bold;
             }
-
         }
     }
 }
