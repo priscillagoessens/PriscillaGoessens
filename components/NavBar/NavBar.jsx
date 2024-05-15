@@ -1,5 +1,5 @@
 import Logo from '../Logo/Logo'
-import logo from '@/public/assets/img/logo.png'
+import logo from '@/public/assets/img/logo2.png'
 import './_NavBar.scss';
 
 export default function Nav() {
@@ -11,7 +11,7 @@ export default function Nav() {
                 <a href="#description">Description</a>
             </li>
             <li className='navigation-container-wrapper_link'>
-                <a href="#projets">Projets</a>
+                <a href="#projects">Projets</a>
             </li>
             <li className='navigation-container-wrapper_link'>
                 <a href="#skills">Skills</a>

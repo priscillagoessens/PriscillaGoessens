@@ -2,7 +2,7 @@
   background: #f8fafc;
   height: 50px;
 }
-.competences-section{
+.skills-section{
   background: #224466;
   color: #f8fafc;
   &-container{
@@ -29,6 +29,7 @@
       white-space: nowrap; 
       max-width: 800px;
       -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
       &-img {
         display: inline-block;
         animation: 10s scroll infinite linear;

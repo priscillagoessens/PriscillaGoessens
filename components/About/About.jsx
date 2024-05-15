@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className='about-section'>
       <div className='about-section-container'>
-        <Details className="about-section-container-description"/>
+        <Details className="about-section-container-description" />
         <Picture source={avatar} className="about-section-container-image" classNameImg="about-section-container-image_size"/>
       </div>
     </div>
