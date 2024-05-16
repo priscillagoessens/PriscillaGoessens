@@ -8,7 +8,7 @@ export default function Nav() {
         <Logo source={logo} className='navigation-container-logo'/>
         <ul className='navigation-container-wrapper'>
             <li className='navigation-container-wrapper_link'>
-                <a href="#description">Description</a>
+                <a href="#description">A propos</a>
             </li>
             <li className='navigation-container-wrapper_link'>
                 <a href="#projects">Projets</a>

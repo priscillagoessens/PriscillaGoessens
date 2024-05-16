@@ -1,0 +1,22 @@
+.footer-section{
+    background: #f8fafc;
+    position: relative;
+    &-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &-logo{
+            height: 150px;
+            width: auto;
+        }
+        a{
+            right: 2%;
+            background: black;
+            position: absolute;
+            border-radius: 50%;
+            padding: 30px;
+            font-family: 'Raleway-bold';
+        }
+    }
+}

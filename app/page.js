@@ -3,6 +3,7 @@ import About from '../components/About/About'
 import Carousel from "@/components/Slider/Slider";
 import Skills from "@/components/Skills/Skills";
 import Form from "@/components/Form/Form";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Carousel/>
       <Skills/>
       <Form/>
+      <Footer/>
     </>
   );
 }

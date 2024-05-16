@@ -21,13 +21,13 @@ export default function Skills() {
             <div className='skills-section-container-scroll' >
               {elements.map((_, index)=>(
                 <div key={index} className='skills-section-container-scroll-img'>
-                <Image className="skills-section-container-scroll-picto" src={html} width={100} height={100}/>
-                <Image className="skills-section-container-scroll-picto" src={css} width={100} height={100}/>
-                <Image className="skills-section-container-scroll-picto" src={js} width={100} height={100}/>
-                <Image className="skills-section-container-scroll-picto" src={react} width={100} height={100}/>
-                <Image className="skills-section-container-scroll-picto" src={sass} width={100} height={100}/>
-                <Image className="skills-section-container-scroll-picto" src={figma} width={100} height={100}/>
-                <Image className="skills-section-container-scroll-picto" src={git} width={100} height={100}/>
+                <Image className="skills-section-container-scroll-picto" src={html} width={100} height={100} alt="icone html"/>
+                <Image className="skills-section-container-scroll-picto" src={css} width={100} height={100} alt="icone css"/>
+                <Image className="skills-section-container-scroll-picto" src={js} width={100} height={100} alt="icone js"/>
+                <Image className="skills-section-container-scroll-picto" src={react} width={100} height={100} alt="icone react"/>
+                <Image className="skills-section-container-scroll-picto" src={sass} width={100} height={100} alt=" icone sass"/>
+                <Image className="skills-section-container-scroll-picto" src={figma} width={100} height={100} alt=" icone figma"/>
+                <Image className="skills-section-container-scroll-picto" src={git} width={100} height={100} alt="icone git"/>
               </div>
               ))}  
             </div>

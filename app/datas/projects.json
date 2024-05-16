@@ -1,20 +1,108 @@
 [
-    {
-      "id": "1",
-      "title": "Booki",
-      "content": "Site web d'agence de location d'appartement entre particuliers",
-      "cover": "/assets/img/booki.jpg"
-    },
-    {
-      "id": "2",
-      "title": "Riding cities",
-      "content": "Site pour association d'activité a roulette",
-      "cover": "/assets/img/riding-cities.jpg"
-    },
-    {
-      "id": "3",
-      "title": "Oh my food",
-      "content": "Site pour les restaurateurs",
-      "cover": "/assets/img/food.jpg"
-    }
+  {
+    "title": "Riding cities",
+    "cover": "/assets/img/projects/riding-cities.jpg",
+    "description": "Site web vitrine pour une association sportive",
+    "technos": [
+      {"value": "Html"},
+      {"value": "Css"}
+    ]
+  },
+  {
+    "title": "Booki",
+    "cover": "/assets/img/projects/booki.jpg",
+    "description": "Creation de la page d'acceuil d'une agence de voyage",
+    "technos": [
+      {"value": "Html"},
+      {"value": "Css"},
+      {"value": "Figma"}
+    ]
+  },
+  {
+    "title": "Oh my food",
+    "cover": "/assets/img/projects/food.jpg",
+    "description": "Site responsive de création de menu pour les restaurateurs",
+    "technos": [
+      {"value": "Html"},
+      {"value": "Css"},
+      {"value": "Sass"},
+      {"value": "Figma"},
+      {"value": "Responsive"}
+    ]
+  },
+  {
+    "title": "Print It",
+    "cover": "/assets/img/projects/print-it.png",
+    "description": "Dynamiser le site de l'imprimerie",
+    "technos": [
+      {"value": "Html"},
+      {"value": "Css"},
+      {"value": "Javascript"}
+    ]
+  },
+  {
+    "title": "Sophie Bluel",
+    "cover": "/assets/img/projects/sophie-bluel.png",
+    "description": "Site web dynamique pour une architecte d'interieur",
+    "technos": [
+      {"value": "Html"},
+      {"value": "Css"},
+      {"value": "Figma"},
+      {"value": "Javascript"},
+      {"value": "API"}
+    ]
+  },
+  {
+    "title": "Qwenta, Menu Maker",
+    "cover": "/assets/img/projects/qwenta.png",
+    "description": "Planification du developpement du site du client",
+    "technos": [
+      {"value": "Trello"},
+      {"value": "Feedly"},
+      {"value": "Veille"}
+    ]
+  },
+  {
+    "title": "Kasa",
+    "cover": "/assets/img/projects/kasa.png",
+    "description": "Application web de location immobilière",
+    "technos": [
+      {"value": "Figma"},
+      {"value": "React"},
+      {"value": "Sass"}
+    ]
+  },
+  {
+    "title": "Nina Carducci",
+    "cover": "/assets/img/projects/ninaCarducci.png",
+    "description": "Optimisation référencement du site d'une photographe",
+    "technos": [
+      {"value": "Lighthouse"},
+      {"value": "Rich Snippet Google"},
+      {"value": "WAVE Evaluation Tool"},
+      {"value": "Accessibilité"},
+      {"value": "SEO"}
+    ]
+  },
+  {
+    "title": "724 Events",
+    "cover": "/assets/img/projects/724events.png",
+    "description": "Debuggage du site d'une agence d'événementiel",
+    "technos": [
+      {"value": "React"},
+      {"value": "React Dev Tools"},
+      {"value": "Jest"}
+    ]
+  },
+  {
+    "title": "Argent Bank",
+    "cover": "/assets/img/projects/argentBank.png",
+    "description": "Implementation d'une application bancaire",
+    "technos": [
+      {"value": "API"},
+      {"value": "React"},
+      {"value": "Redux"},
+      {"value": "Swagger"}
+    ]
+  }
   ]
