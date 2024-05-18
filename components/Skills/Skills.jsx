@@ -7,6 +7,7 @@ import sass from '@/public/assets/img/sass.svg'
 import figma from '@/public/assets/img/figma.png'
 import html from '@/public/assets/img/html.png'
 import git from '@/public/assets/img/github.png'
+import Separator from '../Separator/Separator';
 
 export default function Skills() {
   const elements = Array.from({ length: 3 });
@@ -33,6 +34,7 @@ export default function Skills() {
             </div>
         </div>
     </div>
+    <Separator/>
     </>
   )
 }

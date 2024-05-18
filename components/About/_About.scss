@@ -1,14 +1,26 @@
 .about-section{
-    background: #f8fafc;;
-    padding: 50px 180px;
+    background: #f8fafc;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     &-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 60px;
         &-description{
             color: black;
             font-family: raleway;
             display: flex;
-            flex-direction: column;        
+            flex-direction: column;  
+            height: 100%;
+            width: 50%;      
             &-title,&-content{
                 margin: 1rem;
             }
