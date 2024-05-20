@@ -1,35 +1,14 @@
 "use client"
-import React, { useState } from 'react';
 import './_Form.scss';
 import Button from '../Button/Button';
 
 export default function Form() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // ajouter une logique pour envoyer les données à un serveur ici
-    setSubmitted(true);
-  };
-
   return (
     <div className="section-contact" id="contact">
       <div className='section-contact-container-title'>
         <h2>Contactez-moi</h2>
       </div>
       <div className="section-contact-container">
-      {submitted ? (
-        <div className="success-message">
-          Merci pour votre message.
-        </div>
-      ) : (
-      <> 
       <form 
       className="section-contact-container-form" 
       onSubmit={handleSubmit} 
@@ -65,8 +44,6 @@ export default function Form() {
         </div>
         <Button type="submit" text="Envoyer"></Button>
       </form>
-    </>
-    )}
     </div>
   </div>
 );
