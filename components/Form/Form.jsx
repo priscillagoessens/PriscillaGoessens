@@ -13,8 +13,9 @@ export default function Form() {
       className="section-contact-container-form" 
       onSubmit={handleSubmit} 
       name="contact" 
-      method="post"
-      data-netlify="true">
+      method="POST" 
+      data-netlify="true"
+      action="/success">
         <input type="hidden" name="form-name" value="contact" />
         <div className="section-contact-container-form-group">
           <label htmlFor="name">Nom:</label>
