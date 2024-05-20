@@ -30,16 +30,20 @@ export default function Form() {
         </div>
       ) : (
       <> 
-      <form className="section-contact-container-form" onSubmit={handleSubmit}>
+      <form 
+      className="section-contact-container-form" 
+      onSubmit={handleSubmit} 
+      name="contact" 
+      method="post"
+      data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <div className="section-contact-container-form-group">
           <label htmlFor="name">Nom:</label>
           <input
             type="text"
             id="name"
             name="name"
-            value={formData.name}
             required
-            readOnly
           />
         </div>
         <div className="section-contact-container-form-group">
@@ -48,9 +52,7 @@ export default function Form() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
             required
-            readOnly
           />
         </div>
         <div className="section-contact-container-form-group">
@@ -58,9 +60,7 @@ export default function Form() {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
             required
-            readOnly
           />
         </div>
         <Button type="submit" text="Envoyer"></Button>
