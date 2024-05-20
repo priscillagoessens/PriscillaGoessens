@@ -30,6 +30,7 @@ export default function Gallery() {
                     </div>
                     {selectedProject && (
                       <Modal 
+                        cover={selectedProject.cover}
                         title={selectedProject.title} 
                         detail={selectedProject.description} 
                         technos={selectedProject.technos} 

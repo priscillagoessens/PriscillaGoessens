@@ -1,12 +1,15 @@
 import React from 'react';
 import './_Modal.scss';
 
-export default function Modal({title, detail,technos, closeModal }) {
+export default function Modal({cover,title, detail,technos, closeModal }) {
   return (
     <div className="section-modal">
         <div className='section-modal-container' onClick={(e) => e.stopPropagation()}>
             <button onClick={closeModal}> X</button>
-            <div className='section-modal-container-title'>{title}</div>
+            <div className='section-modal-container-cover-container'>
+              <img src={cover} alt={title} className='section-modal-container-cover-container-img' />
+            </div>
+            <h3 className='section-modal-container-title'>{title}</h3>
             <div className='section-modal-container-body'>{detail}</div>
             <ul>
                 {technos.map((techno, index) => (

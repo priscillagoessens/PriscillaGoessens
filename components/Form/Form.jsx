@@ -11,7 +11,6 @@ export default function Form() {
       <div className="section-contact-container">
       <form 
       className="section-contact-container-form" 
-      onSubmit={handleSubmit} 
       name="contact" 
       method="POST" 
       data-netlify="true"
