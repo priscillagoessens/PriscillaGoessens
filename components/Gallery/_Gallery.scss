@@ -20,8 +20,12 @@
       height: 340px;
       width: 340px;
       align-items: end;
-      --borderWidth: 3px;
+      --borderWidth: 5px;
       border-radius: var(--borderWidth);
+      transition: transform 0.3s ease-in-out;
+        &:hover{
+          transform: scale(1.07);
+        }
         &:after {
           content: '';
           position: absolute;
@@ -29,7 +33,7 @@
           left: calc(-1 * var(--borderWidth));
           height: calc(100% + var(--borderWidth) * 2);
           width: calc(100% + var(--borderWidth) * 2);
-          background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+          background: linear-gradient(60deg, #5ddcff, #3c67e3, #4e00c2 );
           border-radius: calc(2 * var(--borderWidth));
           z-index: -1;
           animation: animatedgradient 3s ease alternate infinite;

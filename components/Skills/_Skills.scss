@@ -1,7 +1,3 @@
-.line{
-  background: #f8fafc;
-  height: 50px;
-}
 .skills-section{
   background: #224466;
   color: #f8fafc;
@@ -30,6 +26,7 @@
       max-width: 800px;
       -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
       mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+      margin: 1rem;
       &-img {
         display: inline-block;
         animation: 10s fil infinite linear;

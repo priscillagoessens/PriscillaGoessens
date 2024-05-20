@@ -13,7 +13,7 @@ export default function Skills() {
   const elements = Array.from({ length: 3 });
   return (
     <>
-    <div className='line'></div>
+    <Separator/>
     <div className='skills-section' id="skills">
         <div className='skills-section-container'>
             <div className='skills-section-container-title'>

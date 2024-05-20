@@ -15,7 +15,6 @@ export default function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // ajouter une logique pour envoyer les données à un serveur ici
-    console.log('Form submitted', formData);
     setSubmitted(true);
   };
 
