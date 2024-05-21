@@ -101,6 +101,12 @@ h2{
     font-size: 2rem;
     margin-bottom: 0.5rem;
     font-family: raleway-bold;
+    
+}
+@media (min-width: 320px) and (max-width: 768px) {
+      h2{
+        font-size: 1.5rem;
+      }
 }
 
 @media (prefers-color-scheme: dark) {

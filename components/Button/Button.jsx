@@ -5,7 +5,7 @@ export default function Button({link, text}) {
     <>
         <button className='custom-btn btn-4'>
         {link ? (
-        <a href="#" download="proposed_file_name">
+        <a href="Priscilla-Goessens.pdf" target="_blank" download>
           {link}
         </a>
       ) : (

@@ -10,12 +10,6 @@
       padding: 20px;  
       &-title { 
         margin: 1rem;
-        h2 {
-          font-weight: 600;
-          font-size: 2rem;
-          margin-bottom: 0.5rem;
-          font-family: raleway-bold;
-        }
       }
     &-scroll {
       position: relative;
@@ -27,9 +21,19 @@
       -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
       mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
       margin: 1rem;
+      @media (min-width: 320px) and (max-width: 425px) {
+        max-width: 200px;
+        max-height: 300px;
+        mask-image: linear-gradient(180deg, transparent, #fff 20%, #fff 80%, transparent);
+      }
       &-img {
         display: inline-block;
         animation: 10s fil infinite linear;
+        @media (min-width: 320px) and (max-width: 425px) {
+          display: flex;
+          flex-direction: column;
+          animation: 10s filmobile infinite linear
+        }
       }
       &-picto{
         scale: 0.8;
@@ -45,4 +49,13 @@
   to {
       transform: translateX(-100%);
   }
+}
+
+@keyframes filmobile{
+  from {
+    transform: translateY(0%);
+}
+to {
+    transform: translateY(-100%);
+}
 }

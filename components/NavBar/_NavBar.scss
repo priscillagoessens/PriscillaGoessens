@@ -6,9 +6,15 @@
     position: absolute;
     left: 20px;
     right: 20px;
+    @media (min-width: 320px) and (max-width: 768px) {
+        justify-content: center;
+    }
     &-wrapper{
         display: flex;
         flex-direction: row;
+        @media (min-width: 320px) and (max-width: 768px) {
+            display: none;
+        }
         &_link{
             display: flex;
             a{

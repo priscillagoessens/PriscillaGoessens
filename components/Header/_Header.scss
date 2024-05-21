@@ -3,6 +3,9 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 768px) {
+        align-items: center;
+    }
     &-wrapper{
         &_banner{
             display: flex;
@@ -35,6 +38,9 @@
                     background-repeat: no-repeat;
                     margin: 20px;
                     font-family: Raleway;
+                    @media (min-width: 320px) and (max-width: 768px) {
+                        display: none;
+                    }
                 }
                 @keyframes h1anim {
                     from {
@@ -49,6 +55,9 @@
                 position: absolute;
                 bottom: 5%;
                 margin: auto;
+                @media (min-width: 320px) and (max-width: 768px) {
+                    display: none;
+                }
                 &-mousey{
                     width: 3px;
                     padding: 10px 15px;
