@@ -1,7 +1,7 @@
 import Details from '../Details/Details'
 import Picture from '../Picture/Picture'
-import avatar from  '@/public/assets/img/avatar.png'
-import iconGit from '@/public/assets/img/github-black.png'
+import avatar from  '@/public/assets/img/avatar.webp'
+import iconGit from '@/public/assets/img/github-black.webp'
 import './_About.scss'
 
 export default function About() {

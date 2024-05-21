@@ -1,7 +1,7 @@
 [
   {
     "title": "Riding cities",
-    "cover": "/assets/img/projects/riding-cities.jpg",
+    "cover": "/assets/img/projects/riding-cities-desktop.webp",
     "description": "Site web vitrine pour une association sportive",
     "technos": [
       {"value": "Html"},
@@ -10,7 +10,7 @@
   },
   {
     "title": "Booki",
-    "cover": "/assets/img/projects/booki.jpg",
+    "cover": "/assets/img/projects/booki-desktop.webp",
     "description": "Creation de la page d'acceuil d'une agence de voyage",
     "technos": [
       {"value": "Html"},
@@ -20,7 +20,7 @@
   },
   {
     "title": "Oh my food",
-    "cover": "/assets/img/projects/food.jpg",
+    "cover": "/assets/img/projects/food-desktop.webp",
     "description": "Site responsive de création de menu pour les restaurateurs",
     "technos": [
       {"value": "Html"},
@@ -32,7 +32,7 @@
   },
   {
     "title": "Print It",
-    "cover": "/assets/img/projects/print-it.png",
+    "cover": "/assets/img/projects/print-it-desktop.webp",
     "description": "Dynamiser le site de l'imprimerie",
     "technos": [
       {"value": "Html"},
@@ -42,7 +42,7 @@
   },
   {
     "title": "Sophie Bluel",
-    "cover": "/assets/img/projects/sophie-bluel.png",
+    "cover": "/assets/img/projects/sophie-bluel-desktop.webp",
     "description": "Site web dynamique pour une architecte d'interieur",
     "technos": [
       {"value": "Html"},
@@ -54,7 +54,7 @@
   },
   {
     "title": "Qwenta, Menu Maker",
-    "cover": "/assets/img/projects/qwenta.png",
+    "cover": "/assets/img/projects/qwenta-desktop.webp",
     "description": "Planification du developpement du site du client",
     "technos": [
       {"value": "Trello"},
@@ -64,7 +64,7 @@
   },
   {
     "title": "Kasa",
-    "cover": "/assets/img/projects/kasa.png",
+    "cover": "/assets/img/projects/kasa-desktop.webp",
     "description": "Application web de location immobilière",
     "technos": [
       {"value": "Figma"},
@@ -74,7 +74,7 @@
   },
   {
     "title": "Nina Carducci",
-    "cover": "/assets/img/projects/ninaCarducci.png",
+    "cover": "/assets/img/projects/ninaCarducci-desktop.webp",
     "description": "Optimisation référencement du site d'une photographe",
     "technos": [
       {"value": "Lighthouse"},
@@ -86,7 +86,7 @@
   },
   {
     "title": "724 Events",
-    "cover": "/assets/img/projects/724events.png",
+    "cover": "/assets/img/projects/724events-desktop.webp",
     "description": "Debuggage du site d'une agence d'événementiel",
     "technos": [
       {"value": "React"},
@@ -96,7 +96,7 @@
   },
   {
     "title": "Argent Bank",
-    "cover": "/assets/img/projects/argentBank.png",
+    "cover": "/assets/img/projects/argentBank-desktop.webp",
     "description": "Implementation d'une application bancaire",
     "technos": [
       {"value": "API"},

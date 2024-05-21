@@ -1,6 +1,6 @@
 import Nav from '../NavBar/NavBar'
 import Banner from '../Banner/Banner'
-import imgBackground from '@/public/assets/img/banner.jpg'
+import imgBackground from '@/public/assets/img/banner-desktop.webp'
 import './_Header.scss'
 
 

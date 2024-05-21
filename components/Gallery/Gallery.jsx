@@ -24,6 +24,7 @@ export default function Gallery() {
                       className="section-project-gallery-container-img openModal"
                       src={project.cover}
                       alt={project.title}
+                      loading="lazy"
                     />
                     <div className='section-project-gallery-container-text'>
                       <span>{project.title}</span>

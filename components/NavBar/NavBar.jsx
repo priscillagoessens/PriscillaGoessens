@@ -1,5 +1,5 @@
 import Logo from '../Logo/Logo'
-import logo from '@/public/assets/img/logo2.png'
+import logo from '@/public/assets/img/logo2.webp'
 import './_NavBar.scss';
 
 export default function Nav() {

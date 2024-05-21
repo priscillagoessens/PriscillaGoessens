@@ -7,7 +7,7 @@ export default function Modal({cover,title, detail,technos, closeModal }) {
         <div className='section-modal-container' onClick={(e) => e.stopPropagation()}>
             <button onClick={closeModal}> X</button>
             <div className='section-modal-container-cover-container'>
-              <img src={cover} alt={title} className='section-modal-container-cover-container-img' />
+              <img src={cover} alt={title} className='section-modal-container-cover-container-img' loading="lazy"/>
             </div>
             <h3 className='section-modal-container-title'>{title}</h3>
             <div className='section-modal-container-body'>{detail}</div>

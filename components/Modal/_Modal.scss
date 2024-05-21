@@ -30,10 +30,18 @@
         color: black;
       }
       &-cover-container{
+        background-color: #4bb9c53d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
       &-img{
         object-fit: cover;
-        width: 80%;
+        width:100%;
         height: auto;
+        border-radius: 10px;
       }
       }
       &-title {
@@ -56,7 +64,7 @@
         column-gap: 15px;
         flex-wrap: wrap;
         li {
-          background: #f0f0f0;
+          background:#97c5dcf0;
           margin: 5px 0;
           padding: 10px;
           border-radius: 4px;
