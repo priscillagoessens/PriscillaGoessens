@@ -8,7 +8,7 @@ export default function Footer() {
     <div className='footer-section'>
         <div className='footer-section-container'>
             <Logo source={logoBlack} className='footer-section-container-logo'/>
-            <a href="#header">^</a>
+            <a href="#header" className='footer-section-container-toTop'>^</a>
         </div>
     </div>
   )
