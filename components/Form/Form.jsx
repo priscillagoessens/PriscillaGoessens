@@ -4,6 +4,33 @@ import './_Form.scss';
 import Button from '../Button/Button';
 
 export default function Form() {
+  const [status, setStatus] = useState(null);
+  const [error, setError] = useState(null);
+
+  const handleFormSubmit = async (event) => {
+      event.preventDefault();
+      try {
+          setStatus('pending');
+          setError(null);
+          const myForm = event.target;
+          const formData = new FormData(myForm);
+          const res = await fetch('/__forms.html', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: new URLSearchParams(formData).toString()
+          });
+          if (res.status === 200) {
+              setStatus('ok');
+          } else {
+              setStatus('error');
+              setError(`${res.status} ${res.statusText}`);
+          }
+      } catch (e) {
+          setStatus('error');
+          setError(`${e}`);
+      }
+  };
+
   return (
     <div className="section-contact" id="contact">
       <div className='section-contact-container-title'>
@@ -11,10 +38,9 @@ export default function Form() {
       </div>
       <div className="section-contact-container">
       <form 
-      className="section-contact-container-form" 
-      name="contact" 
-      method="POST" 
-      netlify
+        className="section-contact-container-form" 
+        name="contact" 
+        onSubmit={handleFormSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="section-contact-container-form-group">
@@ -44,6 +70,18 @@ export default function Form() {
           />
         </div>
         <Button type="submit" text="Envoyer"></Button>
+        {status === 'ok' && (
+                        <div className="alert alert-success">
+                            <SuccessIcon />
+                            Submitted!
+                        </div>
+                    )}
+                    {status === 'error' && (
+                        <div className="alert alert-error">
+                            <ErrorIcon />
+                            {error}
+                        </div>
+                    )}
       </form>
     </div>
   </div>
