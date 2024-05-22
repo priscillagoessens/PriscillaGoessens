@@ -14,7 +14,7 @@ export default function Form() {
           setError(null);
           const myForm = event.target;
           const formData = new FormData(myForm);
-          const res = await fetch('/__forms.html', {
+          const res = await fetch(`/${locale}`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
               body: new URLSearchParams(formData).toString()
@@ -42,7 +42,7 @@ export default function Form() {
         name="contact" 
         onSubmit={handleFormSubmit}
       >
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" />
         <div className="section-contact-container-form-group">
           <label htmlFor="name">Nom:</label>
           <input
