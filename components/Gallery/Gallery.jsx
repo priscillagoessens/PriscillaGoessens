@@ -18,29 +18,31 @@ export default function Gallery() {
     <div className='section-project' id="projects">
       <h2>Mes projets</h2>
       <div className='section-project-gallery'>
-          {projects.map((project, index) => (
-              <div key={index} className='section-project-gallery-container'  onClick={() => openModal(project)}>
-                    <img 
-                      className="section-project-gallery-container-img openModal"
-                      src={project.cover}
-                      alt={project.title}
-                      loading="lazy"
-                    />
-                    <div className='section-project-gallery-container-text'>
-                      <span>{project.title}</span>
-                    </div>
-                    {selectedProject && (
-                      <Modal 
-                        cover={selectedProject.cover}
-                        title={selectedProject.title} 
-                        detail={selectedProject.description} 
-                        technos={selectedProject.technos} 
-                        closeModal={closeModal}
-                      />
-                    )}
-              </div>
-          ))}
+        {projects.map((project, index) => (
+          <div key={index} className='section-project-gallery-container'  onClick={() => openModal(project)}>
+            <img 
+              className="section-project-gallery-container-img openModal"
+              src={project.cover}
+              alt={project.title}
+              loading="lazy"
+            />
+            <div className='section-project-gallery-container-text'>
+              <span>{project.title}</span>
+            </div>
+      
+          </div>
+        ))}
       </div>
+      {selectedProject && (
+              <Modal 
+                cover={selectedProject.cover}
+                title={selectedProject.title} 
+                detail={selectedProject.description} 
+                technos={selectedProject.technos} 
+                gitPage={selectedProject.git}
+                closeModal={closeModal}
+              />
+            )}
     </div>
   )
 }

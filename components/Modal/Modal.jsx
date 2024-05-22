@@ -1,9 +1,9 @@
 import React from 'react';
 import './_Modal.scss';
 
-export default function Modal({cover,title, detail,technos, closeModal }) {
+export default function Modal({cover, title, detail, technos, gitPage, closeModal }) {
   return (
-    <div className="section-modal">
+    <div className="section-modal" onClick={closeModal}>
         <div className='section-modal-container' onClick={(e) => e.stopPropagation()}>
             <button onClick={closeModal}> X</button>
             <div className='section-modal-container-cover-container'>
@@ -16,6 +16,7 @@ export default function Modal({cover,title, detail,technos, closeModal }) {
                     <li key={index}>{techno.value}</li>
                 ))}
             </ul>
+            <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien vers Github</a>
         </div>
       
     </div>

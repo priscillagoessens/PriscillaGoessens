@@ -27,6 +27,11 @@
             &-title,&-content{
                 margin: 1rem;
             }
+            @media( min-width: 320px) and (max-width: 768px){
+                &-title{
+                    text-align: center;
+                }
+            }
             &-content{
                 line-height: 1.6;
                 text-align: justify;
@@ -58,7 +63,7 @@
                 @media (min-width: 320px) and (max-width: 768px) {
                     height: 120px;
                     width: auto;
-                  }
+                }
             }
         }
     }

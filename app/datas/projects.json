@@ -3,6 +3,7 @@
     "title": "Riding cities",
     "cover": "/assets/img/projects/riding-cities-desktop.webp",
     "description": "Site web vitrine pour une association sportive",
+    "git":"https://github.com/priscillagoessens/OPC_Riding-cities",
     "technos": [
       {"value": "Html"},
       {"value": "Css"}
@@ -12,6 +13,7 @@
     "title": "Booki",
     "cover": "/assets/img/projects/booki-desktop.webp",
     "description": "Creation de la page d'acceuil d'une agence de voyage",
+    "git":"https://github.com/priscillagoessens/OPC_Booki",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -22,6 +24,7 @@
     "title": "Oh my food",
     "cover": "/assets/img/projects/food-desktop.webp",
     "description": "Site responsive de création de menu pour les restaurateurs",
+    "git":"https://github.com/priscillagoessens/OPC_OhMyFood",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -34,6 +37,7 @@
     "title": "Print It",
     "cover": "/assets/img/projects/print-it-desktop.webp",
     "description": "Dynamiser le site de l'imprimerie",
+    "git":"https://github.com/priscillagoessens/OPC_Print-It",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -44,6 +48,7 @@
     "title": "Sophie Bluel",
     "cover": "/assets/img/projects/sophie-bluel-desktop.webp",
     "description": "Site web dynamique pour une architecte d'interieur",
+    "git":"https://github.com/priscillagoessens/OPC_Portefolio",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -66,6 +71,7 @@
     "title": "Kasa",
     "cover": "/assets/img/projects/kasa-desktop.webp",
     "description": "Application web de location immobilière",
+    "git":"https://github.com/priscillagoessens/OPC_Kasa",
     "technos": [
       {"value": "Figma"},
       {"value": "React"},
@@ -76,6 +82,7 @@
     "title": "Nina Carducci",
     "cover": "/assets/img/projects/ninaCarducci-desktop.webp",
     "description": "Optimisation référencement du site d'une photographe",
+    "git":"https://github.com/priscillagoessens/OPC_ninacarducci",
     "technos": [
       {"value": "Lighthouse"},
       {"value": "Rich Snippet Google"},
@@ -88,6 +95,7 @@
     "title": "724 Events",
     "cover": "/assets/img/projects/724events-desktop.webp",
     "description": "Debuggage du site d'une agence d'événementiel",
+    "git":"https://github.com/priscillagoessens/OPC_724Events",
     "technos": [
       {"value": "React"},
       {"value": "React Dev Tools"},
@@ -98,6 +106,7 @@
     "title": "Argent Bank",
     "cover": "/assets/img/projects/argentBank-desktop.webp",
     "description": "Implementation d'une application bancaire",
+    "git":"https://github.com/priscillagoessens/OPC_ArgentBankFront",
     "technos": [
       {"value": "API"},
       {"value": "React"},
@@ -105,4 +114,4 @@
       {"value": "Swagger"}
     ]
   }
-  ]
+]

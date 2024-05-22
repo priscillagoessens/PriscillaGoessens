@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import Button from '../Button/Button'
+import Link from 'next/link';
 
 export default function Details({sectionStyle, titleStyle, contentStyle,iconContainerStyle, iconGit}) {
   const link= "Mon Cv"
@@ -10,15 +11,15 @@ export default function Details({sectionStyle, titleStyle, contentStyle,iconCont
           <h2>A propos de moi</h2>
         </div>
         <p className={contentStyle}>
-          Développeuse Front End passionnée par la création web. <br/>
-          Je maîtrise l'HTML, CSS, Sass et javascript pour concevoir des interfaces esthétiques et fonctionnelles. J'aime également développer des applications web dynamiques et réactives en React Js.
-          Actuellement engagée dans une formation diplômante en Développement Web chez OpenClassrooms, je consolide mes connaissances pour continuer à grandir.
+        Je suis une développeuse front-end basée dans la métropole Lilloise, passionnée par la création web. 
+        J'utilise <strong>HTML</strong>, <strong>CSS</strong>, <strong>Sass</strong> et <strong>JavaScript</strong> pour concevoir des interfaces esthétiques et fonctionnelles, je développe des applications web dynamiques en <strong>React JS</strong>. 
+        Actuellement en formation diplômante de Développeur Web chez OpenClassrooms, je continue à approfondir mes compétences pour offrir des solutions web innovantes et performantes.
         </p>
         <div className={iconContainerStyle}>
           <Button link={link}/>
-          <a href="https://github.com/priscillagoessens" target="_blank">
+          <Link href="https://github.com/priscillagoessens" target="_blank">
             <Image src={iconGit} alt="GitHub" />
-          </a>
+          </Link>
         </div>
       </div>
     )
