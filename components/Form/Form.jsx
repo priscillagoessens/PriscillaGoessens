@@ -14,7 +14,7 @@ export default function Form() {
           setError(null);
           const myForm = event.target;
           const formData = new FormData(myForm);
-          const res = await fetch(`/${locale}`, {
+          const res = await fetch(`/__forms.html`, {
               method: 'POST',
               headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
               body: new URLSearchParams(formData).toString()
