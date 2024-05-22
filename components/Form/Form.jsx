@@ -43,7 +43,7 @@ export default function Form() {
         name="contact" 
         onSubmit={handleFormSubmit}
       >
-        <input type="hidden" name="contact" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
         <div className="section-contact-container-form-group">
           <label htmlFor="name">Nom:</label>
           <input
