@@ -38,14 +38,18 @@
         align-self: center;
       }
     }
+    &-alert{
+      color: black;
+      font-family: 'Raleway';
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      &-success{
+        background: #d9eee1;
+      }
+      &-error{
+        background: #ee7060;
+      }
+    }
   }
 }
-
-  .success-message {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-    background-color: #d4edda;
-    color: #155724;
-  }

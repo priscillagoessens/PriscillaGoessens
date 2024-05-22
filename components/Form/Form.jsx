@@ -39,8 +39,9 @@ export default function Form() {
       </div>
       <div className="section-contact-container">
         {status === 'ok' ? (
-          <div className="alert alert-success">
-            Submitted!
+          <div className="alert-success">
+            Merci pour votre message !  
+            Je reviens vers vous prochainement.
           </div>
         ) : (
           <form 
@@ -79,7 +80,7 @@ export default function Form() {
           </form>
         )}
         {status === 'error' && (
-          <div className="alert alert-error">
+          <div className="alert-error">
             {error}
           </div>
         )}
