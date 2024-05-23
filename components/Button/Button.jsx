@@ -1,13 +1,14 @@
 import './_Button.scss'
+import Link from 'next/link'
 
 export default function Button({link, text}) {
   return (
     <>
         <button className='custom-btn'>
           {link ? (
-            <a href="Priscilla-Goessens.pdf" target="_blank" download>
+            <Link href="Priscilla-Goessens.pdf" target="_blank" download>
             {link}
-            </a>
+            </Link>
           ) : (
             <span >{text}</span>
           )}

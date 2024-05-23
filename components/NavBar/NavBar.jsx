@@ -5,6 +5,7 @@ import './_NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
+import Link from 'next/link'
 
 
 export default function Nav() {
@@ -24,21 +25,21 @@ export default function Nav() {
         <Logo source={logo} className='navigation-container-logo'/>
         <ul className={`navigation-container-wrapper ${isOpen ? "is-open" : ""}`}>
             <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <a href="#description">A propos</a>
+                <Link href="#description">A propos</Link>
             </li>
             <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <a href="#projects">Projets</a>
+                <Link href="#projects">Projets</Link>
             </li>
             <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <a href="#skills">Skills</a>
+                <Link href="#skills">Skills</Link>
             </li>
             <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <a href="#contact">Contact</a>
+                <Link href="#contact">Contact</Link>
             </li>
         </ul>
-        <button className='navigation-container-burger' onClick={toggleMenu}>
-                <FontAwesomeIcon icon={faBars} />
-            </button>        
+        <span className='navigation-container-burger' onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faBars} />
+        </span>        
       </nav>
   )
 }
