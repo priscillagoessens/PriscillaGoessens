@@ -1,5 +1,5 @@
 # Portfolio
-![screenshot]()
+![screenshot](https://github.com/priscillagoessens/PriscillaGoessens/blob/a0f20954e8ba3a1830afbfce01e6a9df287f36ca/public/portfolio.PNG)
 
 
 ## Tech Stack
@@ -9,15 +9,14 @@
 
 
 ## Running locally
-- Requirements: Node, NPM and Yarn (LTS)*
+- Requirements: Node, NPM and Yarn
 - Navigate to your cloned project, and run `yarn` on a terminal
-- Create a file named `.env.local` and add the PAT environment variable here (`PAT=<40-character-pat>`)
 - Run `yarn dev` to test the Next.js app on `localhost:3000`
-- Production builds can also be tested using `yarn build` and `yarn start`
+
 
 *`npm` commands also work
 
 ## Lighthouse stats
-![image]()
+![image](https://github.com/priscillagoessens/PriscillaGoessens/blob/a0f20954e8ba3a1830afbfce01e6a9df287f36ca/public/ligthHouseResult.PNG)
 
 <!-- ![views](https://githits.vercel.app/api/views?user=kausko&repo=Portfolio&mode=dark&disable=Total) -->
