@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo'
 import logo from '@/public/assets/img/logo2.webp'
 import './_NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 import Link from 'next/link'
 
@@ -13,7 +13,6 @@ export default function Nav() {
 
     const toggleMenu =()=>{
         setIsOpen((open) => !open);
-        console.log('Menu is now', !isOpen ? 'open' : 'closed');
     }
     
     const closeMenu=()=>{
@@ -38,7 +37,11 @@ export default function Nav() {
             </li>
         </ul>
         <span className='navigation-container-burger' onClick={toggleMenu}>
-            <FontAwesomeIcon icon={faBars} />
+            {isOpen ?(
+                <FontAwesomeIcon icon={faXmark} />
+            ) : ( 
+                <FontAwesomeIcon icon={faBars} />
+            )}
         </span>        
       </nav>
   )
