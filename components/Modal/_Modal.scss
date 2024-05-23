@@ -16,12 +16,14 @@
     padding: 20px;
     border-radius: 8px;
     max-width: 500px;
-    // width: 90%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: relative;
     row-gap: 20px;
     display: flex;
     flex-direction: column;
+    @media (min-width: 320px) and (max-width: 768px) {
+      margin: 1rem;
+    } 
     &-close{
       position: absolute;
       top: 10px;
@@ -65,6 +67,9 @@
     }
     &-link{
       margin: 0 0 1rem 0;
+      a{
+        text-decoration: underline;
+      }
     }
   }
 }

@@ -34,10 +34,11 @@
                     display: inline-block;
                     background-position: 150% center;
                     background-repeat: no-repeat;
-                    margin: 20px;
+                    margin: 2rem;
                     font-family: Raleway;
                     @media (min-width: 320px) and (max-width: 768px) {
-                        display: none;
+                        font-size: small;
+                        text-align: center;
                     }
                 }
                 @keyframes h1anim {
@@ -53,9 +54,6 @@
                 position: absolute;
                 bottom: 5%;
                 margin: auto;
-                @media (min-width: 320px) and (max-width: 768px) {
-                    bottom: 15%;
-                }
                 &-mousey{
                     width: 3px;
                     padding: 10px 15px;
@@ -73,6 +71,10 @@
                     animation-duration: 2.2s;
                     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
                     animation-iteration-count: infinite;
+                    @media (min-width: 320px) and (max-width: 768px) {
+                        height: 30px;
+                        width: 0;
+                    }
                   }  
                   @keyframes scroll {
                     0% { opacity: 0; }

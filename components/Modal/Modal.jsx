@@ -1,10 +1,14 @@
 import './_Modal.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark} from '@fortawesome/free-solid-svg-icons'
 
 export default function Modal({cover, title, detail, technos, gitPage, closeModal }) {
   return (
     <div className="section-modal" onClick={closeModal}>
         <div className='section-modal-container' onClick={(e) => e.stopPropagation()}>
-            <button className='section-modal-container-close' onClick={closeModal}> X</button>
+            <button className='section-modal-container-close' onClick={closeModal}>
+              <FontAwesomeIcon icon={faXmark} />
+            </button>
             <div className='section-modal-container-cover-container'>
               <img src={cover} alt={title} className='section-modal-container-cover-container-img' loading="lazy"/>
             </div>
@@ -15,9 +19,10 @@ export default function Modal({cover, title, detail, technos, gitPage, closeModa
                     <li key={index} className='section-modal-container-list-items'>{techno.value}</li>
                 ))}
             </ul>
-            <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien vers Github</a>
+            {gitPage && 
+                <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien vers Github </a>
+              }          
         </div>
-
     </div>
   )
 }

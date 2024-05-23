@@ -1,5 +1,6 @@
 .section-contact{
   padding: 20px;
+  background: #224466;
   &-container {
     max-width: 600px;
     margin: 1rem auto;
@@ -38,18 +39,22 @@
         align-self: center;
       }
     }
-    &-alert{
+    &-alert-success{
       color: black;
       font-family: 'Raleway';
       padding: 2rem;
       border-radius: 10px;
       text-align: center;
-      &-success{
-        background: #d9eee1;
-      }
-      &-error{
-        background: #ee7060;
-      }
+      background: #d9eee1;
     }
+    &-alert-error{
+      color: black;
+      font-family: 'Raleway';
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      background: #ee7060;
+    }
+    
   }
 }

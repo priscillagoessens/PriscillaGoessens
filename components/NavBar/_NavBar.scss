@@ -3,20 +3,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     left: 20px;
     right: 20px;
-    @media (min-width: 320px) and (max-width: 768px) {
-        justify-content: center;
-    }
     &-wrapper{
         display: flex;
         flex-direction: row;
         @media (min-width: 320px) and (max-width: 768px) {
-            display: none;
+            flex-direction: column;
+            position: fixed;
+            right: 8vw;
+            top: 3vh;
+            height: 100vh;
+            align-items: end;
+            visibility: hidden;
+            opacity: 0; // Ensure the menu is not visible
+            transition: opacity 0.3s ease-in-out;
+        }
+        &.is-open {
+            visibility: visible; // Show menu when is-open is added
+            opacity: 1;
         }
         &_link{
             display: flex;
+            @media (min-width: 320px) and (max-width: 768px) {
+                display: block;
+                padding: 0.5rem;
+            }
             a{
                 text-decoration: none;
                 color: #faf4f4;
@@ -28,5 +40,16 @@
     &-logo{
         height: 100px;
         width: auto;
+    }
+    &-burger{
+        display: none;
+        @media (min-width: 320px) and (max-width: 768px) {
+            display: block;
+            background: transparent;
+            border: none;
+            svg{
+                height: 20px;
+            }
+        }
     }
 }
