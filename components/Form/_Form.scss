@@ -39,7 +39,7 @@
         align-self: center;
       }
     }
-    &-alert-success{
+    .alert-success{
       color: black;
       font-family: 'Raleway';
       padding: 2rem;
@@ -47,7 +47,7 @@
       text-align: center;
       background: #d9eee1;
     }
-    &-alert-error{
+    .alert-error{
       color: black;
       font-family: 'Raleway';
       padding: 2rem;
