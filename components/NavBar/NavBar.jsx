@@ -12,7 +12,7 @@ export default function Nav() {
     const [isOpen, setIsOpen]= useState(false)
 
     const toggleMenu =()=>{
-        setIsOpen((open) => !open);
+        setIsOpen(!isOpen);
     }
     
     const closeMenu=()=>{
@@ -30,7 +30,7 @@ export default function Nav() {
                 <Link href="#projects">Projets</Link>
             </li>
             <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <Link href="#skills">Skills</Link>
+                <Link href="#skills">Compétences</Link>
             </li>
             <li className='navigation-container-wrapper_link' onClick={closeMenu}>
                 <Link href="#contact">Contact</Link>

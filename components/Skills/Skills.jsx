@@ -7,10 +7,14 @@ import sass from '@/public/assets/img/sass.webp'
 import figma from '@/public/assets/img/figma.webp'
 import html from '@/public/assets/img/html.webp'
 import git from '@/public/assets/img/github.webp'
+import canva from '@/public/assets/img/canva.webp'
+import tailwind from '@/public/assets/img/tailwind.webp'
+import netlify from '@/public/assets/img/netlify.webp'
 import Separator from '../Separator/Separator';
 
 export default function Skills() {
-  const elements = Array.from({ length: 3 });
+  const elements = Array.from({ length: 3 });   //on creer trois tableaux que l'on vient remplir ensuite avec le .map
+  
   return (
     <>
     <Separator/>
@@ -24,11 +28,14 @@ export default function Skills() {
                 <div key={index} className='skills-section-container-scroll-img'>
                 <Image className="skills-section-container-scroll-picto" src={html} width={100} height={100} alt="icone html" loading="lazy"/>
                 <Image className="skills-section-container-scroll-picto" src={css} width={100} height={100} alt="icone css" loading="lazy"/>
+                <Image className="skills-section-container-scroll-picto" src={tailwind} width={100} height={100} alt="icone tailwind" loading="lazy"/>
                 <Image className="skills-section-container-scroll-picto" src={js} width={100} height={100} alt="icone js" loading="lazy"/>
                 <Image className="skills-section-container-scroll-picto" src={react} width={100} height={100} alt="icone react" loading="lazy"/>
                 <Image className="skills-section-container-scroll-picto" src={sass} width={100} height={100} alt=" icone sass" loading="lazy"/>
                 <Image className="skills-section-container-scroll-picto" src={figma} width={100} height={100} alt=" icone figma" loading="lazy"/>
+                <Image className="skills-section-container-scroll-picto" src={canva} width={100} height={100} alt="icone canva" loading="lazy"/>
                 <Image className="skills-section-container-scroll-picto" src={git} width={100} height={100} alt="icone git" loading="lazy"/>
+                <Image className="skills-section-container-scroll-picto" src={netlify} width={100} height={100} alt="icone netlify" loading="lazy"/>
               </div>
               ))}  
             </div>

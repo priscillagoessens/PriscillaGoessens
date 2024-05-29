@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Button from '../Button/Button'
 import Link from 'next/link';
 
-export default function Details({sectionStyle, titleStyle, contentStyle,iconContainerStyle, iconGit}) {
+export default function Details({sectionStyle, titleStyle, contentStyle, iconContainerStyle, iconGit, linkedin}) {
   const link= "Mon Cv"
     return (
       <div className={sectionStyle} id="description">
@@ -19,6 +19,9 @@ export default function Details({sectionStyle, titleStyle, contentStyle,iconCont
           <Button link={link}/>
           <Link href="https://github.com/priscillagoessens" target="_blank">
             <Image src={iconGit} alt="GitHub" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/priscilla-goessens/" target="_blank">
+            <Image src={linkedin} alt="linkedin" />
           </Link>
         </div>
       </div>
