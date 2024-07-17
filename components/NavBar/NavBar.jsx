@@ -3,7 +3,7 @@ import Logo from '../Logo/Logo'
 import logo from '@/public/assets/img/logo2.webp'
 import './_NavBar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark, faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 import Link from 'next/link'
 
@@ -22,27 +22,29 @@ export default function Nav() {
   return (
       <nav className='navigation-container'>
         <Logo source={logo} className='navigation-container-logo'/>
-        <ul className={`navigation-container-wrapper ${isOpen ? "is-open" : ""}`}>
-            <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <Link href="#description">A propos</Link>
-            </li>
-            <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <Link href="#projects">Projets</Link>
-            </li>
-            <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <Link href="#skills">Compétences</Link>
-            </li>
-            <li className='navigation-container-wrapper_link' onClick={closeMenu}>
-                <Link href="#contact">Contact</Link>
-            </li>
-        </ul>
-        <span className='navigation-container-burger' onClick={toggleMenu}>
-            {isOpen ?(
-                <FontAwesomeIcon icon={faXmark} />
-            ) : ( 
-                <FontAwesomeIcon icon={faBars} />
-            )}
-        </span>        
+        <div className='navigation-container-nav'>
+            <ul className={`navigation-container-nav-wrapper ${isOpen ? "is-open" : ""}`}>
+                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
+                    <Link href="#description">A propos</Link>
+                </li>
+                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
+                    <Link href="#projects">Mes projets</Link>
+                </li>
+                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
+                    <Link href="#skills">Compétences</Link>
+                </li>
+                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
+                    <Link href="#contact"><FontAwesomeIcon icon={faEnvelope} /></Link>
+                </li>
+            </ul>
+            <span className='navigation-container-burger' onClick={toggleMenu}>
+                {isOpen ?(
+                    <FontAwesomeIcon icon={faXmark} />
+                ) : ( 
+                    <FontAwesomeIcon icon={faBars} />
+                )}
+            </span>        
+        </div>
       </nav>
   )
 }

@@ -2,7 +2,7 @@
   {
     "title": "Riding cities",
     "cover": "/assets/img/projects/riding-cities-desktop.webp",
-    "description": "Site web vitrine pour une association sportive",
+    "description": "Création d'un site vitrine pour une association sportive.",
     "git":"https://github.com/priscillagoessens/OPC_Riding-cities",
     "technos": [
       {"value": "Html"},
@@ -12,18 +12,18 @@
   {
     "title": "Booki",
     "cover": "/assets/img/projects/booki-desktop.webp",
-    "description": "Creation de la page d'acceuil d'une agence de voyage",
+    "description": "Création des pages pour une agence d'hébergement et d'activités. Conception en responsive design et intégration des maquettes fournies sur Figma par l'UI designer. ",
     "git":"https://github.com/priscillagoessens/OPC_Booki",
     "technos": [
-      {"value": "Html"},
-      {"value": "Css"},
+      {"value": "Html5"},
+      {"value": "Css3"},
       {"value": "Figma"}
     ]
   },
   {
     "title": "Oh my food",
     "cover": "/assets/img/projects/food-desktop.webp",
-    "description": "Site responsive de création de menu pour les restaurateurs",
+    "description": "Site responsive pour la création et la personnalisation de menus pour les restaurateurs.",
     "git":"https://github.com/priscillagoessens/OPC_OhMyFood",
     "technos": [
       {"value": "Html"},
@@ -36,7 +36,7 @@
   {
     "title": "Print It",
     "cover": "/assets/img/projects/print-it-desktop.webp",
-    "description": "Dynamiser le site de l'imprimerie",
+    "description": "Rendre le site de l'imprimerie dynamique en ajoutant un carrousel en JavaScript.",
     "git":"https://github.com/priscillagoessens/OPC_Print-It",
     "technos": [
       {"value": "Html"},
@@ -47,7 +47,7 @@
   {
     "title": "Sophie Bluel",
     "cover": "/assets/img/projects/sophie-bluel-desktop.webp",
-    "description": "Site web dynamique pour une architecte d'interieur",
+    "description": "Rendre dynamique la galerie du site d'une architecte d'intérieur, et permettre l'ajout et la suppression d'éléments de la galerie en tant qu'administrateur.",
     "git":"https://github.com/priscillagoessens/OPC_Portefolio",
     "technos": [
       {"value": "Html"},
@@ -60,7 +60,7 @@
   {
     "title": "Qwenta, Menu Maker",
     "cover": "/assets/img/projects/qwenta-desktop.webp",
-    "description": "Planification du developpement du site du client",
+    "description": "Planification du developpement du site du client, chiffrage, choix des technologies et mise ne place d'une veille.",
     "technos": [
       {"value": "Trello"},
       {"value": "Feedly"},
@@ -70,7 +70,7 @@
   {
     "title": "Kasa",
     "cover": "/assets/img/projects/kasa-desktop.webp",
-    "description": "Application web de location immobilière",
+    "description": "Développement d'une plateforme de location d'appartements avec React et React Router. Amélioration de l'expérience utilisateur sur tous les supports. Utilisation de Sass pour gérer les styles et intégration de l'API pour collecter les données.",
     "git":"https://github.com/priscillagoessens/OPC_Kasa",
     "technos": [
       {"value": "Figma"},
@@ -81,7 +81,7 @@
   {
     "title": "Nina Carducci",
     "cover": "/assets/img/projects/ninaCarducci-desktop.webp",
-    "description": "Optimisation référencement du site d'une photographe",
+    "description": "Optimisation SEO pour un meilleur référencement, et amélioration de la performance et de l'accessibilité du site d'une photographe.",
     "git":"https://github.com/priscillagoessens/OPC_ninacarducci",
     "technos": [
       {"value": "Lighthouse"},
@@ -94,7 +94,7 @@
   {
     "title": "724 Events",
     "cover": "/assets/img/projects/724events-desktop.webp",
-    "description": "Debuggage du site d'une agence d'événementiel",
+    "description": "Debuggage et correction du site d'une agence d'événementiel",
     "git":"https://github.com/priscillagoessens/OPC_724Events",
     "technos": [
       {"value": "React"},
@@ -105,13 +105,24 @@
   {
     "title": "Argent Bank",
     "cover": "/assets/img/projects/argentBank-desktop.webp",
-    "description": "Implementation d'une application bancaire",
+    "description": "Implémentation d'une application bancaire en ligne. Mise en place de l'authentification utilisateur avec JWT et Axios, gestion des données avec Redux pour la récupération et la modification du profil. Utilisation de Swagger pour la documentation des routes. ",
     "git":"https://github.com/priscillagoessens/OPC_ArgentBankFront",
     "technos": [
       {"value": "API"},
       {"value": "React"},
       {"value": "Redux"},
       {"value": "Swagger"}
+    ]
+  },
+  {
+    "title": "Pixel Pop Art",
+    "cover": "/assets/img/projects/pixelpopart.webp",
+    "description": "Création d'une boutique en ligne avec wordpress et woocommerce. Theme personnaliser, utilisation de l'ia pour generé les bannieres et les textes des produit. Optimisation SEO avec Yoast, implementation du plugin de formulaire WpForm.",
+    "lien": "http://pixelpopart.fr/",
+    "technos": [
+      {"value": "Wordpress"},
+      {"value": "Woocommerce"},
+      {"value": "Yoast SEO"}
     ]
   }
 ]

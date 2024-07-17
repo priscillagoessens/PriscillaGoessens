@@ -1,6 +1,6 @@
 import './_Modal.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark} from '@fortawesome/free-solid-svg-icons'
+import { faXmark, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function Modal({cover, title, detail, technos, gitPage, closeModal }) {
   return (
@@ -20,7 +20,9 @@ export default function Modal({cover, title, detail, technos, gitPage, closeModa
                 ))}
             </ul>
             {gitPage && 
-                <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien vers Github </a>
+                <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien Github 
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
+                </a>
               }          
         </div>
     </div>

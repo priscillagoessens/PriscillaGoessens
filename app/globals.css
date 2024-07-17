@@ -126,3 +126,7 @@ h2{
   src: url('../public/assets/fonts/Raleway-Medium.ttf'); } 
 @font-face { font-family: Raleway-italic; 
   src: url('../public/assets/fonts/Raleway-Italic.ttf'); } 
+
+  p{
+    font-family: raleway;
+  }

@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 import Link from 'next/link';
 
 export default function Details({sectionStyle, titleStyle, contentStyle, iconContainerStyle, iconGit, linkedin}) {
-  const link= "Mon Cv"
+  const link = "Mon Cv"
     return (
       <div className={sectionStyle} id="description">
         <div className={titleStyle}>

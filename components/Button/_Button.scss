@@ -5,7 +5,7 @@
     border-radius: 20px;
     padding: 10px 25px;
     font-family: raleway-semibold;
-    background: #0a3971;
+    background: #BA4F7D;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -18,7 +18,10 @@
     padding: 0;
     border: none;
     &:hover{
-        background-color: #4bb9c5;
+        background-color: 0 0% 100%
       }
+    span{
+        margin-left: 8px;
+    }
     
   }
