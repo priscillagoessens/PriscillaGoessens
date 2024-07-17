@@ -35,7 +35,6 @@ export default function Form() {
   return (
     <div className="section-contact" id="contact">
       <div className='section-contact-container-title'>
-        <h2>Contactez-moi</h2>
         <div className='section-contact-container-title-text'>
           <p>📩 Contactez-moi pour discuter de vos besoins et de la manière dont je peux vous aider à atteindre vos objectifs</p>
         </div>
