@@ -65,12 +65,18 @@
         color: #f8fafc;
       }
     }
-    &-link{
-      margin: 0 0 1rem 0;
-      a{
-        text-decoration: underline;
+
+     
+      &-link{
+        margin: 0 0 1rem 0;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        a{
+          text-decoration: underline;
+        }
       }
-    }
+    
   }
 }
 

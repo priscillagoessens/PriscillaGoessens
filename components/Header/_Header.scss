@@ -11,7 +11,7 @@
             justify-content: center;
             align-items: center;
             @media (min-width: 320px) and (max-width: 768px) {
-                height: 50vh;
+                height: 90vh;
             }
             &-img{
                 background-size: cover;
@@ -32,7 +32,7 @@
                     -webkit-background-clip: text;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    animation: h1anim 8s linear forwards;
+                    animation: h1anim 3s linear forwards;
                     background-size: 500% auto;
                     display: inline-block;
                     background-position: 150% center;

@@ -34,15 +34,15 @@ export default function Gallery() {
         ))}
       </div>
       {selectedProject && (
-              <Modal 
-                cover={selectedProject.cover}
-                title={selectedProject.title} 
-                detail={selectedProject.description} 
-                technos={selectedProject.technos} 
-                gitPage={selectedProject.git}
-                closeModal={closeModal}
-              />
-            )}
+        <Modal 
+          cover={selectedProject.cover}
+          title={selectedProject.title} 
+          detail={selectedProject.description} 
+          technos={selectedProject.technos} 
+          gitPage={selectedProject.git}
+          closeModal={closeModal}
+        />
+      )}
     </div>
   )
 }

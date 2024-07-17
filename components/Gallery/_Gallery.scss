@@ -5,6 +5,10 @@
     display: flex;
     flex-direction: column;
     background: #224466;
+    @media (min-width: 320px) and (max-width: 768px) {
+      align-items: start;
+      }
+    
   h2{
     margin: 1rem;
   }
@@ -15,6 +19,10 @@
     padding: 30px;
     column-gap: 60px;
     row-gap: 30px;
+    @media (min-width: 320px) and (max-width: 768px) {
+      display: inline-flex;
+      flex-wrap: nowrap;
+    }
     &-container{
       cursor: pointer;
       display: flex;
@@ -46,7 +54,7 @@
           background-size: 300% 300%;
         }
     &-img{
-      object-fit: cover;
+      object-fit: fill;
       width: 100%;
       height: 100%;
       border-radius: 10px;
