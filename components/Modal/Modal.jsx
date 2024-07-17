@@ -2,7 +2,7 @@ import './_Modal.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
-export default function Modal({cover, title, detail, technos, gitPage, closeModal }) {
+export default function Modal({cover, title, detail, technos, gitPage, closeModal, link }) {
   return (
     <div className="section-modal" onClick={closeModal}>
         <div className='section-modal-container' onClick={(e) => e.stopPropagation()}>
@@ -21,6 +21,11 @@ export default function Modal({cover, title, detail, technos, gitPage, closeModa
             </ul>
             {gitPage && 
                 <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien Github 
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
+                </a>
+              } 
+              {link && 
+                <a className='section-modal-container-link' href={link} target='_blank'>Site web 
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                 </a>
               }          

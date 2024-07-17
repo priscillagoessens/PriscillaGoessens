@@ -40,6 +40,7 @@ export default function Gallery() {
           detail={selectedProject.description} 
           technos={selectedProject.technos} 
           gitPage={selectedProject.git}
+          link={selectedProject.link}
           closeModal={closeModal}
         />
       )}
