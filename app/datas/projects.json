@@ -118,7 +118,7 @@
     "title": "Pixel Pop Art",
     "cover": "/assets/img/projects/pixelpopart.webp",
     "description": "Création d'une boutique en ligne avec wordpress et woocommerce. Theme personnaliser, utilisation de l'ia pour generé les bannieres et les textes des produit. Optimisation SEO avec Yoast, implementation du plugin de formulaire WpForm.",
-    "lien": "http://pixelpopart.fr/",
+    "link": "http://pixelpopart.fr/",
     "technos": [
       {"value": "Wordpress"},
       {"value": "Woocommerce"},
