@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import './_Form.scss';
 import Button from '../Button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot,faAt} from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 export default function Form() {
   const [status, setStatus] = useState(null);
@@ -33,13 +36,11 @@ export default function Form() {
   };
 
   return (
-    <div className="section-contact" id="contact">
-      <div className='section-contact-container-title'>
-        <div className='section-contact-container-title-text'>
-          <p>📩 Contactez-moi pour discuter de vos besoins et de la manière dont je peux vous aider à atteindre vos objectifs</p>
-        </div>
-      </div>
-      <div className="section-contact-container">
+    <section className='section-contact background'>
+      <h2 className='title'>Me contacter</h2>
+
+      <div className='section-contact_container'>
+        <div className='section-contact_container-form'>
         {status === 'ok' ? (
           <div className="alert-success">
             Merci pour votre message !  
@@ -47,12 +48,12 @@ export default function Form() {
           </div>
         ) : (
           <form 
-            className="section-contact-container-form" 
+            className="section-contact_container-form-wrapper" 
             name="contact" 
             onSubmit={handleFormSubmit}
           >
             <input type="hidden" name="form-name" value="contact" />
-            <div className="section-contact-container-form-group">
+            <div className="section-contact_container-form-wrapper-group">
               <label htmlFor="name">Nom:</label>
               <input
                 type="text"
@@ -61,7 +62,7 @@ export default function Form() {
                 required
               />
             </div>
-            <div className="section-contact-container-form-group">
+            <div className="section-contact_container-form-wrapper-group">
               <label htmlFor="email">Email:</label>
               <input
                 type="email"
@@ -70,7 +71,7 @@ export default function Form() {
                 required
               />
             </div>
-            <div className="section-contact-container-form-group">
+            <div className="section-contact_container-form-wrapper-group">
               <label htmlFor="message">Message:</label>
               <textarea
                 id="message"
@@ -86,8 +87,13 @@ export default function Form() {
             {error}
           </div>
         )}
+        </div>
+        <div className='section-contact_container-info'>
+          <p><FontAwesomeIcon icon={faAt} /> <Link href="mailto:priscillagoessens@gmail.com"> Envoyer un email</Link></p>
+          <p><FontAwesomeIcon icon={faLocationDot} />  Métropole Lilloise</p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

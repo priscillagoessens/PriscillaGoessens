@@ -15,8 +15,8 @@ export default function Gallery() {
     setSelectedProject(null);
   };
   return (
-    <div className='section-project' id="projects">
-      <h2>Mes projets</h2>
+    <div className='section-project background' id="projects">
+      <h2 className='title'>Mes projets</h2>
       <div className='section-project-gallery'>
         {projects.map((project, index) => (
           <div key={index} className='section-project-gallery-container'  onClick={() => openModal(project)}>

@@ -1,64 +1,85 @@
 .section-contact{
-  padding: 20px;
-  background: #224466;
-  &-container {
-    max-width: 600px;
-    margin: 1rem auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    &-title {
-      color: #f9f9f9;
-      margin: 1rem;
-      display: flex;
-      justify-content: center;
-      &-text{
-        text-align: center;
-      }
-    }
-    &-form {
+  padding: 1rem;
+  font-family: raleway;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  h3{
+    color: #f9f9f9;
+    margin: 1rem;
+    text-align: center;
+  }
+  &_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+    &-form{
       display: flex;
       flex-direction: column;
       color: black;
-      &-group {
-        margin-bottom: 15px;
-        label {
-          display: block;
-          margin-bottom: 5px;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 600;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+      background-color: #f9f9f9;
+      width: 30%;
+      padding: 20px;
+      @media (min-width: 320px) and (max-width: 768px) {
+        width: 100%;
+      }
+      &-wrapper{
+        display: flex;
+        flex-direction: column;
+        &-group {
+          margin-bottom: 15px;
+          label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+          }
+          input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #fff;
+            color: black;
+          }
         }
-        input, textarea {
-          width: 100%;
-          padding: 10px;
-          border: 1px solid #000;
-          border-radius: 5px;
-          background-color: #fff;
-          color: black;
-        }
+
       }
       button{
         align-self: center;
       }
     }
-    .alert-success{
-      color: black;
-      font-family: 'Raleway';
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      background: #d9eee1;
+    &-info{
+      flex: 1;
+      max-width: 300px;
+      margin: 1rem;
+      p{
+        text-align: left;
+        margin: 1.5rem 0;
+      }
     }
-    .alert-error{
-      color: black;
-      font-family: 'Raleway';
-      padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      background: #ee7060;
-    }
-    
+  }
+  .alert-success{
+    color: black;
+    font-family: 'Raleway';
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    background: #d9eee1;
+    margin-top: 20px;
+  }
+  .alert-error{
+    color: black;
+    font-family: 'Raleway';
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    background: #ee7060;
+    margin-top: 20px;
   }
 }

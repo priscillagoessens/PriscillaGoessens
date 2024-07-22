@@ -18,10 +18,10 @@ export default function Skills() {
   return (
     <>
     <Separator/>
-    <div className='skills-section' id="skills">
+    <div className='skills-section background' id="skills">
         <div className='skills-section-container'>
             <div className='skills-section-container-title'>
-                <h2>Compétences techniques</h2>
+                <h2 className='title'>Compétences techniques</h2>
             </div>
             <div className='skills-section-container-scroll' >
               {elements.map((_, index)=>(
