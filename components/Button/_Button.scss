@@ -1,9 +1,7 @@
 .custom-btn {
-    width: 100px;;
-    height: 40px;
     color: #f8fafc;
     border-radius: 20px;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-family: raleway-semibold;
     background: #BA4F7D;
     cursor: pointer;
@@ -14,13 +12,11 @@
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-    line-height: 42px;
-    padding: 0;
     border: none;
     &:hover{
         background-color: 0 0% 100%
       }
-    span{
+    svg{
         margin-left: 8px;
     }
     

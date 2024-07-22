@@ -1,70 +1,49 @@
 .section-project{
-  padding: 20px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background: #224466;
-    @media (min-width: 320px) and (max-width: 768px) {
-      align-items: start;
-      }
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 320px) and (max-width: 768px) {
+    align-items: start;
+    }
     
   h2{
     margin: 1rem;
   }
   &-gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 30px;
-    column-gap: 60px;
-    row-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
     @media (min-width: 320px) and (max-width: 768px) {
-      display: inline-flex;
-      flex-wrap: nowrap;
+      grid-template-columns: 1fr;
+      justify-items: center;
     }
     &-container{
       cursor: pointer;
-      display: flex;
-      position: relative;
-      height: 340px;
-      width: 340px;
-      align-items: end;
-      --borderWidth: 5px;
-      border-radius: var(--borderWidth);
-      transition: transform 0.3s ease-in-out;
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       @media (min-width: 320px) and (max-width: 768px) {
-        height: 230px;
-        width: 280px;
+        width: 90%;
       }
         &:hover{
           transform: scale(1.07);
         }
-        &:after {
-          content: '';
-          position: absolute;
-          top: calc(-1 * var(--borderWidth));
-          left: calc(-1 * var(--borderWidth));
-          height: calc(100% + var(--borderWidth) * 2);
-          width: calc(100% + var(--borderWidth) * 2);
-          background: linear-gradient(60deg, #5ddcff, #3c67e3, #4e00c2 );
-          border-radius: calc(2 * var(--borderWidth));
-          z-index: -1;
-          animation: animatedgradient 3s ease alternate infinite;
-          background-size: 300% 300%;
-        }
     &-img{
-      object-fit: fill;
       width: 100%;
-      height: 100%;
-      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
     }
     &-text{
-      position: absolute;
       background: #f8fafce3;
       padding: 20px;
-      width: 100%;
-      border-radius: 0 0 15px 15px;
+      margin-top: -13px;
+    }
       span{
         color: #090f21;
         font-family: raleway-bold;
@@ -72,16 +51,3 @@
     }
     }
   }
-}
-
-@keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}

@@ -1,5 +1,39 @@
 [
   {
+    "title": "Argent Bank",
+    "cover": "/assets/img/projects/argentBank-desktop.webp",
+    "description": "Implémentation d'une application bancaire en ligne. Mise en place de l'authentification utilisateur avec JWT et Axios, gestion des données avec Redux pour la récupération et la modification du profil. Utilisation de Swagger pour la documentation des routes. ",
+    "git":"https://github.com/priscillagoessens/OPC_ArgentBankFront",
+    "technos": [
+      {"value": "API"},
+      {"value": "React"},
+      {"value": "Redux"},
+      {"value": "Swagger"}
+    ]
+  },
+  {
+    "title": "Kasa",
+    "cover": "/assets/img/projects/kasa-desktop.webp",
+    "description": "Développement d'une plateforme de location d'appartements avec React et React Router. Amélioration de l'expérience utilisateur sur tous les supports. Utilisation de Sass pour gérer les styles et intégration de l'API pour collecter les données.",
+    "git":"https://github.com/priscillagoessens/OPC_Kasa",
+    "technos": [
+      {"value": "Figma"},
+      {"value": "React"},
+      {"value": "Sass"}
+    ]
+  },
+  {
+    "title": "Pixel Pop Art",
+    "cover": "/assets/img/projects/pixelpopart.webp",
+    "description": "Création d'une boutique en ligne avec wordpress et woocommerce. Theme personnaliser, utilisation de l'ia pour generé les bannieres et les textes des produit. Optimisation SEO avec Yoast, implementation du plugin de formulaire WpForm.",
+    "link": "http://pixelpopart.fr/",
+    "technos": [
+      {"value": "Wordpress"},
+      {"value": "Woocommerce"},
+      {"value": "Yoast SEO"}
+    ]
+  },
+  {
     "title": "Riding cities",
     "cover": "/assets/img/projects/riding-cities-desktop.webp",
     "description": "Création d'un site vitrine pour une association sportive.",
@@ -58,27 +92,6 @@
     ]
   },
   {
-    "title": "Qwenta, Menu Maker",
-    "cover": "/assets/img/projects/qwenta-desktop.webp",
-    "description": "Planification du developpement du site du client, chiffrage, choix des technologies et mise ne place d'une veille.",
-    "technos": [
-      {"value": "Trello"},
-      {"value": "Feedly"},
-      {"value": "Veille"}
-    ]
-  },
-  {
-    "title": "Kasa",
-    "cover": "/assets/img/projects/kasa-desktop.webp",
-    "description": "Développement d'une plateforme de location d'appartements avec React et React Router. Amélioration de l'expérience utilisateur sur tous les supports. Utilisation de Sass pour gérer les styles et intégration de l'API pour collecter les données.",
-    "git":"https://github.com/priscillagoessens/OPC_Kasa",
-    "technos": [
-      {"value": "Figma"},
-      {"value": "React"},
-      {"value": "Sass"}
-    ]
-  },
-  {
     "title": "Nina Carducci",
     "cover": "/assets/img/projects/ninaCarducci-desktop.webp",
     "description": "Optimisation SEO pour un meilleur référencement, et amélioration de la performance et de l'accessibilité du site d'une photographe.",
@@ -103,26 +116,14 @@
     ]
   },
   {
-    "title": "Argent Bank",
-    "cover": "/assets/img/projects/argentBank-desktop.webp",
-    "description": "Implémentation d'une application bancaire en ligne. Mise en place de l'authentification utilisateur avec JWT et Axios, gestion des données avec Redux pour la récupération et la modification du profil. Utilisation de Swagger pour la documentation des routes. ",
-    "git":"https://github.com/priscillagoessens/OPC_ArgentBankFront",
+    "title": "Qwenta, Menu Maker",
+    "cover": "/assets/img/projects/qwenta-desktop.webp",
+    "description": "Planification du developpement du site du client, chiffrage, choix des technologies et mise ne place d'une veille.",
     "technos": [
-      {"value": "API"},
-      {"value": "React"},
-      {"value": "Redux"},
-      {"value": "Swagger"}
-    ]
-  },
-  {
-    "title": "Pixel Pop Art",
-    "cover": "/assets/img/projects/pixelpopart.webp",
-    "description": "Création d'une boutique en ligne avec wordpress et woocommerce. Theme personnaliser, utilisation de l'ia pour generé les bannieres et les textes des produit. Optimisation SEO avec Yoast, implementation du plugin de formulaire WpForm.",
-    "link": "http://pixelpopart.fr/",
-    "technos": [
-      {"value": "Wordpress"},
-      {"value": "Woocommerce"},
-      {"value": "Yoast SEO"}
+      {"value": "Trello"},
+      {"value": "Feedly"},
+      {"value": "Veille"}
     ]
   }
+
 ]
