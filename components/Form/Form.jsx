@@ -79,7 +79,7 @@ export default function Form() {
                 required
               />
             </div>
-            <Button type="submit" text="Envoyer"></Button>
+            <Button type="submit">Envoyer</Button>
           </form>
         )}
         {status === 'error' && (
