@@ -7,7 +7,7 @@ import './_About.scss'
 
 export default function About() {
   return (
-    <div className='about-section'>
+    <div className='about-section background'>
       <div className='about-section-container'>
         <Details sectionStyle="about-section-container-description" 
                   titleStyle="about-section-container-description-title"

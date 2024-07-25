@@ -20,7 +20,7 @@ export default function Modal({cover, title, detail, technos, gitPage, closeModa
                 ))}
             </ul>
             {gitPage && 
-                <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien Github 
+                <a className='section-modal-container-link' href={gitPage} target='_blank'>Lien vers Github 
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare}/>
                 </a>
               } 

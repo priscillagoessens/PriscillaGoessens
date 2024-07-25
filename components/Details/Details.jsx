@@ -4,11 +4,10 @@ import Button from '../Button/Button'
 import Link from 'next/link';
 
 export default function Details({sectionStyle, titleStyle, contentStyle, iconContainerStyle, iconGit, linkedin}) {
-  const link = "Voir mon Cv"
     return (
       <div className={sectionStyle} id="description">
         <div className={titleStyle}>
-          <h2>A propos de moi</h2>
+          <h2 className='title'>A propos de moi</h2>
         </div>
         <p className={contentStyle}>
         Développeuse front-end basée dans la métropole Lilloise, passionnée par la création web. 
@@ -18,7 +17,7 @@ export default function Details({sectionStyle, titleStyle, contentStyle, iconCon
         </p>
         <div className={iconContainerStyle}>
         <Button link="Priscilla_Goessens_CV.pdf">
-          Mon CV
+          Mon CV (pdf)
         </Button>
           <Link href="https://github.com/priscillagoessens" target="_blank">
             <Image src={iconGit} alt="GitHub" />

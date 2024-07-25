@@ -1,6 +1,7 @@
 .footer-section{
     background: #f8fafc;
     position: relative;
+    background: #F0EAF0;
     &-container{
         display: flex;
         flex-direction: row;
@@ -15,12 +16,12 @@
         }
         &-toTop{
             right: 2%;
-            background: #5DA5B3;
+            background: #EEC8D9;
             position: absolute;
             border-radius: 50%;
             padding: 20px;
             font-family: 'Raleway-bold';
-            color: #f8fafc;
+            color: #651F3F;
         }
     }
 }

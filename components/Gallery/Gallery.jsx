@@ -2,8 +2,10 @@
 import './_Gallery.scss';
 import projects from '@/app/datas/projects.json'
 import Modal from '../Modal/Modal';
-import { Children, useState } from 'react';
+import { useState } from 'react';
 import Button from '../Button/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 export default function Gallery() {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -25,7 +27,7 @@ export default function Gallery() {
       <h2 className='title'>Mes projets</h2>
       <div className='section-project-gallery'>
         {projects.slice(0, showMore ? projects.length : 6).map((project, index) => (
-          <div key={index} className='section-project-gallery-container' onClick={() => openModal(project)}>
+          <div key={index} className='section-project-gallery-container'>
             <img 
               className="section-project-gallery-container-img openModal"
               src={project.cover}
@@ -36,10 +38,10 @@ export default function Gallery() {
               <span>{project.title}</span>
             </div>
             <div className='section-project-gallery-container-detail'>
-              <div>{project.title}</div>
-              <div>{project.description}</div>
-              <div>{project.context}</div>
-              <Button>Plus d'info</Button>
+              <div className='section-project-gallery-container-detail-title title'>{project.title}</div>
+              <div>{project.raccourci}</div>
+              <div className='section-project-gallery-container-detail-context'>{project.context}</div>
+              <Button onClick={() => openModal(project)}>Plus d'info <FontAwesomeIcon icon={faArrowRight} /></Button>
 
             </div>
           </div>

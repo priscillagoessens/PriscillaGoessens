@@ -1,5 +1,4 @@
 .about-section{
-    background: #f8fafc;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -14,6 +13,9 @@
         width: 90%;
         max-width: 1200px;
         margin: 20px auto;
+        @media (min-width: 320px) and (max-width: 768px) {
+            justify-content: center;
+        }
         &-description{
             color: black;
             font-family: raleway;
@@ -26,11 +28,9 @@
             }     
             &-title{
                 margin: 1rem;
+                text-align: left;
                 @media( min-width: 320px) and (max-width: 768px){  
                     text-align: center;
-                }
-                h2{
-                    color: black;
                 }
             }
             &-content{

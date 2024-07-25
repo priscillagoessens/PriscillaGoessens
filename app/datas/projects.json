@@ -5,6 +5,7 @@
     "description": "Implémentation d'une application bancaire en ligne. Mise en place de l'authentification utilisateur avec JWT et Axios, gestion des données avec Redux pour la récupération et la modification du profil. Utilisation de Swagger pour la documentation des routes. ",
     "git":"https://github.com/priscillagoessens/OPC_ArgentBankFront",
     "context": "Projet de formation",
+    "raccourci":"Application bancaire en ligne.",
     "technos": [
       {"value": "API"},
       {"value": "React"},
@@ -18,6 +19,7 @@
     "description": "Développement d'une plateforme de location d'appartements avec React et React Router. Amélioration de l'expérience utilisateur sur tous les supports. Utilisation de Sass pour gérer les styles et intégration de l'API pour collecter les données.",
     "git":"https://github.com/priscillagoessens/OPC_Kasa",
     "context": "Projet de formation",
+    "raccourci":"Plateforme de location d'appartements.",
     "technos": [
       {"value": "Figma"},
       {"value": "React"},
@@ -30,6 +32,7 @@
     "description": "Création d'une boutique en ligne avec wordpress et woocommerce. Theme personnaliser, utilisation de l'ia pour generé les bannieres et les textes des produit. Optimisation SEO avec Yoast, implementation du plugin de formulaire WpForm.",
     "link": "http://pixelpopart.fr/",
     "context": "Projet de personnel",
+    "raccourci":"Boutique E-commerce artisanal.",
     "technos": [
       {"value": "Wordpress"},
       {"value": "Woocommerce"},
@@ -42,6 +45,7 @@
     "description": "Création d'un site vitrine pour une association sportive.",
     "git":"https://github.com/priscillagoessens/OPC_Riding-cities",
     "context": "Projet de formation",
+    "raccourci":"Site d'association sportive",
     "technos": [
       {"value": "Html"},
       {"value": "Css"}
@@ -53,6 +57,7 @@
     "description": "Création des pages pour une agence d'hébergement et d'activités. Conception en responsive design et intégration des maquettes fournies sur Figma par l'UI designer. ",
     "git":"https://github.com/priscillagoessens/OPC_Booki",
     "context": "Projet de formation",
+    "raccourci":"Site d'agence d'hébergement et d'activités.",
     "technos": [
       {"value": "Html5"},
       {"value": "Css3"},
@@ -65,6 +70,7 @@
     "description": "Site responsive pour la création et la personnalisation de menus pour les restaurateurs.",
     "git":"https://github.com/priscillagoessens/OPC_OhMyFood",
     "context": "Projet de formation",
+    "raccourci":"Site de personnalisation de menu pour les restaurateurs.",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -79,6 +85,7 @@
     "description": "Rendre le site de l'imprimerie dynamique en ajoutant un carrousel en JavaScript.",
     "git":"https://github.com/priscillagoessens/OPC_Print-It",
     "context": "Projet de formation",
+    "raccourci":"Site d'une imprimerie.",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -91,6 +98,7 @@
     "description": "Rendre dynamique la galerie du site d'une architecte d'intérieur, et permettre l'ajout et la suppression d'éléments de la galerie en tant qu'administrateur.",
     "git":"https://github.com/priscillagoessens/OPC_Portefolio",
     "context": "Projet de formation",
+    "raccourci":"Site d'une architecte d'interieur.",
     "technos": [
       {"value": "Html"},
       {"value": "Css"},
@@ -102,9 +110,10 @@
   {
     "title": "Nina Carducci",
     "cover": "/assets/img/projects/ninaCarducci-desktop.webp",
-    "description": "Optimisation SEO pour un meilleur référencement, et amélioration de la performance et de l'accessibilité du site d'une photographe.",
+    "description": "Optimisation SEO pour un meilleur référencement, amélioration de la performance et de l'accessibilité du site d'une photographe.",
     "git":"https://github.com/priscillagoessens/OPC_ninacarducci",
     "context": "Projet de formation",
+    "raccourci":"Site d'une photographe.",
     "technos": [
       {"value": "Lighthouse"},
       {"value": "Rich Snippet Google"},
@@ -119,6 +128,7 @@
     "description": "Debuggage et correction du site d'une agence d'événementiel",
     "git":"https://github.com/priscillagoessens/OPC_724Events",
     "context": "Projet de formation",
+    "raccourci":"Site d'une agence d'événementiel.",
     "technos": [
       {"value": "React"},
       {"value": "React Dev Tools"},
@@ -130,6 +140,7 @@
     "cover": "/assets/img/projects/qwenta-desktop.webp",
     "description": "Planification du developpement du site du client, chiffrage, choix des technologies et mise ne place d'une veille.",
     "context": "Projet de formation",
+    "raccourci":"Planification du developpement du site du client.",
     "technos": [
       {"value": "Trello"},
       {"value": "Feedly"},

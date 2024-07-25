@@ -20,30 +20,32 @@ export default function Nav() {
     }
 
   return (
-      <nav className='navigation-container'>
-        <Logo source={logo} className='navigation-container-logo'/>
-        <div className='navigation-container-nav'>
-            <ul className={`navigation-container-nav-wrapper ${isOpen ? "is-open" : ""}`}>
-                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
-                    <Link href="#description">A propos</Link>
-                </li>
-                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
-                    <Link href="#projects">Mes projets</Link>
-                </li>
-                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
-                    <Link href="#skills">Compétences</Link>
-                </li>
-                <li className='navigation-container-nav-wrapper_link' onClick={closeMenu}>
-                    <Link href="#contact"><FontAwesomeIcon icon={faEnvelope} /></Link>
-                </li>
-            </ul>
-            <span className='navigation-container-burger' onClick={toggleMenu}>
-                {isOpen ?(
-                    <FontAwesomeIcon icon={faXmark} />
-                ) : ( 
-                    <FontAwesomeIcon icon={faBars} />
-                )}
-            </span>        
+      <nav className='navigation-section'>
+        <div className='navigation-section-container'>
+            <Logo source={logo} className='navigation-section-container-logo'/>
+            <div className='navigation-section-container-nav'>
+                <ul className={`navigation-section-container-nav-wrapper ${isOpen ? "is-open" : ""}`}>
+                    <li className='navigation-section-container-nav-wrapper_link' onClick={closeMenu}>
+                        <Link href="#description">A propos</Link>
+                    </li>
+                    <li className='navigation-section-container-nav-wrapper_link' onClick={closeMenu}>
+                        <Link href="#projects">Mes projets</Link>
+                    </li>
+                    <li className='navigation-section-container-nav-wrapper_link' onClick={closeMenu}>
+                        <Link href="#skills">Compétences</Link>
+                    </li>
+                    <li className='navigation-section-container-nav-wrapper_link ' onClick={closeMenu}>
+                        <Link href="#contact" className='navigation-section-container-nav-wrapper_link-contact'><FontAwesomeIcon icon={faEnvelope} /></Link>
+                    </li>
+                </ul>
+                <span className='navigation-section-container-burger' onClick={toggleMenu}>
+                    {isOpen ?(
+                        <FontAwesomeIcon icon={faXmark} />
+                    ) : ( 
+                        <FontAwesomeIcon icon={faBars} />
+                    )}
+                </span>        
+            </div>
         </div>
       </nav>
   )
