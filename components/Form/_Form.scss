@@ -1,9 +1,9 @@
 .section-contact{
-  padding: 1rem;
   font-family: raleway;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  position: relative;
   h3{
     color: #f9f9f9;
     margin: 1rem;
@@ -13,8 +13,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 2rem;
+    column-gap: 10rem;
     &-form{
       display: flex;
       flex-direction: column;
@@ -23,7 +24,7 @@
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, .1);
       background-color: #f9f9f9;
-      width: 30%;
+      width: 35%;
       padding: 20px;
       @media (min-width: 320px) and (max-width: 768px) {
         width: 100%;
@@ -38,14 +39,15 @@
             margin-bottom: 5px;
             font-family: 'Raleway', sans-serif;
             font-weight: 600;
+            color: #651F3F;
           }
           input, textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #000;
+            border: 1.5px solid #EEC8D9;
             border-radius: 5px;
             background-color: #fff;
-            color: black;
+            color: #E5E7EB;
           }
         }
 
@@ -55,17 +57,21 @@
       }
     }
     &-info{
-      flex: 1;
-      max-width: 300px;
-      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       p{
         text-align: left;
         margin: 1.5rem 0;
+        background: #f9f9f9;
+        color: #651F3F;
+        padding: 1rem;
+        border-radius: 5px;
       }
     }
   }
   .alert-success{
-    color: black;
+    color: #FFFFFF;
     font-family: 'Raleway';
     padding: 2rem;
     border-radius: 10px;
@@ -74,12 +80,12 @@
     margin-top: 20px;
   }
   .alert-error{
-    color: black;
+    color: #FFFFFF;
     font-family: 'Raleway';
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    background: #ee7060;
+    background: #A13F12;
     margin-top: 20px;
   }
 }

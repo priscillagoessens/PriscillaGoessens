@@ -13,6 +13,7 @@ export default function Footer() {
           <Link href="#header" className='footer-section-container-toTop'>
             <FontAwesomeIcon icon={faAngleUp} />
           </Link>
+          {/* <p>Copyright All Right Reserved 2024 Priscilla Goessens</p> */}
         </div>
     </div>
   )

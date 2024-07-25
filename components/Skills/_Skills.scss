@@ -1,11 +1,16 @@
 .skills-section{
   color: #f8fafc;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 5rem;
   &-container{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;    
       &-title { 
         margin: 1rem;
       }

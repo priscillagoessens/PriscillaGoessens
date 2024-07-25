@@ -72,6 +72,15 @@ export default function Form() {
               />
             </div>
             <div className="section-contact_container-form-wrapper-group">
+              <label htmlFor="objet">Objet :</label>
+              <input
+                type="text"
+                id="objet"
+                name="objet"
+                required
+              />
+            </div>
+            <div className="section-contact_container-form-wrapper-group">
               <label htmlFor="message">Message:</label>
               <textarea
                 id="message"
@@ -79,7 +88,7 @@ export default function Form() {
                 required
               />
             </div>
-            <Button type="submit" text="Envoyer"></Button>
+            <Button type="submit">Envoyer</Button>
           </form>
         )}
         {status === 'error' && (
@@ -87,10 +96,6 @@ export default function Form() {
             {error}
           </div>
         )}
-        </div>
-        <div className='section-contact_container-info'>
-          <p><FontAwesomeIcon icon={faAt} /> <Link href="mailto:priscillagoessens@gmail.com"> Envoyer un email</Link></p>
-          <p><FontAwesomeIcon icon={faLocationDot} />  Métropole Lilloise</p>
         </div>
       </div>
     </section>
