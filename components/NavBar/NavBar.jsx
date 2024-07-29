@@ -24,7 +24,15 @@ export default function Nav() {
         <div className='navigation-section-container'>
             <Logo source={logo} className='navigation-section-container-logo'/>
             <div className='navigation-section-container-nav'>
+                <span className='navigation-section-container-burger' onClick={toggleMenu}>
+                    {isOpen ?(
+                        <FontAwesomeIcon icon={faXmark} />
+                    ) : ( 
+                        <FontAwesomeIcon icon={faBars} />
+                    )}
+                </span>
                 <ul className={`navigation-section-container-nav-wrapper ${isOpen ? "is-open" : ""}`}>
+                
                     <li className='navigation-section-container-nav-wrapper_link' onClick={closeMenu}>
                         <Link href="#description">A propos</Link>
                     </li>
@@ -38,13 +46,7 @@ export default function Nav() {
                         <Link href="#contact" className='navigation-section-container-nav-wrapper_link-contact'><FontAwesomeIcon icon={faEnvelope} /></Link>
                     </li>
                 </ul>
-                <span className='navigation-section-container-burger' onClick={toggleMenu}>
-                    {isOpen ?(
-                        <FontAwesomeIcon icon={faXmark} />
-                    ) : ( 
-                        <FontAwesomeIcon icon={faBars} />
-                    )}
-                </span>        
+                        
             </div>
         </div>
       </nav>
