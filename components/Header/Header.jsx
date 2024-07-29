@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className='header-container' id="header">
       <Nav/>
-      <Banner source={imgBackground} title={homeTitle} className='header-container-wrapper_banner-img'/>
+      <Banner className='header-container-wrapper_banner-img'/>
     </div>
   )
 }

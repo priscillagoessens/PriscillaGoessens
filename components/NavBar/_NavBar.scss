@@ -1,15 +1,17 @@
 .navigation-section{
-    width: 100vw;
+    // width: 100vw;
     background: #4747473d;
-    position: absolute;
+    // position: absolute;
     padding: 0 2rem;
     &-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @media (min-width: 320px) and (max-width: 768px) {
-        left:0;
-    }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+        position: sticky;
+        @media (min-width: 320px) and (max-width: 768px) {
+            left:0;
+        }
     &-nav{
         &-wrapper{
             display: flex;
@@ -17,8 +19,8 @@
             @media (min-width: 320px) and (max-width: 768px) {
                 flex-direction: column;
                 position: fixed;
-                right: 35px;
-                top: 20px;
+                right: 0;
+                top: 6.25rem;
                 align-items: end;
                 visibility: hidden;
                 opacity: 0; 
@@ -27,13 +29,17 @@
             &.is-open {
                 visibility: visible; 
                 opacity: 1;
+                width: 100%;
+                @media (min-width: 320px) and (max-width: 768px) {
+                    background: rgba(71, 71, 71, 0.2392156863);
+                }
             }
             &_link{
                 display: flex;
                 @media (min-width: 320px) and (max-width: 768px) {
                     display: block;
                     padding: 0.3rem;
-                    font-size: 0.8em;
+                    font-size: 1rem;
                 }
                 a {
                     color: #faf4f4;
@@ -83,9 +89,9 @@
             display: block;
             background: transparent;
             border: none;
-            margin-top: -30px;
+            margin-top: -10px;
             svg{
-                height: 20px;
+                height: 25px;
             }
         }
     }
