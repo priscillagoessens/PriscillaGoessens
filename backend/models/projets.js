@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const projetSchema = new mongoose.Schema({
   title: { type: String, required: true },
@@ -12,8 +12,10 @@ const projetSchema = new mongoose.Schema({
       value: { type: String, required: true }
     }
   ]
+},{
+  timestamps: true
 });
 
 const Projet = mongoose.model('Projet', projetSchema);
 
-module.exports = Projet;
+export default Projet;
