@@ -1,0 +1,51 @@
+.header-container{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    @media (min-width: 320px) and (max-width: 768px) {
+        align-items: center;
+    }
+    &-wrapper{
+        &_banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+            &-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &-title{
+                    position: absolute;
+                    text-align: center;
+                    background: linear-gradient(to right,  #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(0, 0, 0, 0));
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: h1anim 3s linear forwards;
+                    background-size: 500% auto;
+                    display: inline-block;
+                    background-position: 150% center;
+                    background-repeat: no-repeat;
+                    margin: 2rem;
+                    font-family: Raleway;
+                    @media (min-width: 320px) and (max-width: 768px) {
+                        font-size: 0.75em;
+                        text-align: center;
+                    }
+                }
+                @keyframes h1anim {
+                    from {
+                        background-position: 150% center;
+                    }
+                    to {
+                        background-position: 0 center;
+                    }
+                }
+            }
+        }
+    }
+}
