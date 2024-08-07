@@ -11,7 +11,9 @@ import axios from "axios"
 export default function Gallery() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showMore, setShowMore] = useState(false);
-  const [ projets , setProjets]= useState([])
+  const [projets , setProjets]= useState([])
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const openModal = (project) => {
     setSelectedProject(project);
@@ -28,13 +30,26 @@ export default function Gallery() {
   useEffect(() => {
     const fetchProjets = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/api/projet');
-        setProjets(response.data);
+        const response = await fetch('http://localhost:5000/api/projets');
+        if (!response.ok) {
+          throw new Error('Erreur lors de la récupération des projets');
+        }
+        const data = await response.json();
+        console.log('Données reçues:', data); // Vérifiez la structure des données ici
+        if (Array.isArray(data)) {
+          setProjets(data);
+        } else {
+          console.error('Les données reçues ne sont pas un tableau.');
+          setError('Erreur lors de la récupération des projets');
+        }
       } catch (err) {
         console.error('Erreur lors de la récupération des projets :', err);
+        setError('Erreur lors de la récupération des projets');
+      } finally {
+        setIsLoading(false);
       }
     };
-
+  
     fetchProjets();
   }, []);
 
