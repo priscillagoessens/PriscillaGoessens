@@ -1,0 +1,77 @@
+.banner-container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(/assets/img/banner-montagne.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 320px) and (max-width: 768px) {
+        align-items: center;
+    }
+    &-title{
+        position: absolute;
+        text-align: center;
+        background: linear-gradient(to right,  #f1f1f1, #f1f1f1, #f1f1f1, #f1f1f1, rgba(0, 0, 0, 0));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: h1anim 3s linear forwards;
+        background-size: 500% auto;
+        display: inline-block;
+        background-position: 150% center;
+        background-repeat: no-repeat;
+        margin: 2rem;
+        font-family: Raleway;
+        @media (min-width: 320px) and (max-width: 768px) {
+            font-size: 0.75em;
+            text-align: center;
+        }
+    }
+    @keyframes h1anim {
+        from {
+            background-position: 150% center;
+        }
+        to {
+            background-position: 0 center;
+        }
+    }
+    &-scroll-downs{
+        position: absolute;
+        bottom: 5%;
+        margin: auto;
+        &-mousey{
+            width: 3px;
+            padding: 10px 15px;
+            height: 35px;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            opacity: 0.75;
+            box-sizing: content-box;
+          &-scroller{
+            width: 3px;
+            height: 10px;
+            border-radius: 25%;
+            background-color: #fff;
+            animation-name: scroll;
+            animation-duration: 2.2s;
+            animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+            animation-iteration-count: infinite;
+            @media (min-width: 320px) and (max-width: 768px) {
+                height: 30px;
+                width: 0;
+            }
+          }  
+          @keyframes scroll {
+            0% { opacity: 0; }
+            10% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(15px); opacity: 0.5;}
+            100% { transform: translateY(60%); opacity: 0;}
+          }
+        }
+    }
+}

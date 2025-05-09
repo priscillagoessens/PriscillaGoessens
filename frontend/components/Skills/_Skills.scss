@@ -1,0 +1,115 @@
+.skills-section{
+  color: #651F3F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 5rem;
+  &-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;    
+      &-title { 
+        margin: 1rem;
+      }
+    &-scroll {
+      position: relative;
+      display: flex;
+      padding: 30px 0;
+      overflow: hidden;
+      white-space: nowrap; 
+      max-width: 800px;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+      margin: 1rem;
+      @media (min-width: 320px) and (max-width: 425px) {
+        display: none;
+      }
+      &-img {
+        display: inline-block;
+        animation: 10s fil infinite linear;
+        @media (min-width: 320px) and (max-width: 425px) {
+          display: flex;
+          flex-direction: column;
+          animation: 10s filmobile infinite linear
+        }
+      }
+      &-picto{
+        scale: 0.8;
+        margin: 0 40px;
+      }
+    }
+    &-list{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      gap: 60px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      @media (min-width: 320px) and (max-width: 425px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        @media (min-width: 320px) and (max-width: 425px) {
+          display: block;
+          }
+        li{
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: raleway;
+          @media (min-width: 320px) and (max-width: 425px) {
+            width: inherit;
+            font-size: 0.75rem;
+            }
+        }
+      }
+      &-skill{
+        display: flex;
+        flex-direction: column;
+        background: #F0EAF0;
+        border-radius: 15px;
+        padding: 2rem;
+        line-height: 1.5rem;
+        width: 40%;
+        @media (min-width: 320px) and (max-width: 425px) {
+          width: 90%;
+          }
+        h3{
+          align-self: center;
+          font-family: raleway-bold;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+@keyframes fil {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes filmobile{
+  from {
+    transform: translateY(0%);
+}
+to {
+    transform: translateY(-100%);
+}
+}
